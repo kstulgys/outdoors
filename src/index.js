@@ -1,3 +1,5 @@
 import "../sass/main.scss"
 
-document.getElementById("app")
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("app")
+})
