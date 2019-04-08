@@ -1,2 +1,0 @@
-# outdoors
-Created with CodeSandbox
