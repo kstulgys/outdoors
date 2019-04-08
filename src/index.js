@@ -1,5 +1,8 @@
 import "../sass/main.scss"
 
 document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById("app")
+  setTimeout(() => {
+    alert("Hello")
+  }, 3000)
+  // document.getElementById("app")
 })
