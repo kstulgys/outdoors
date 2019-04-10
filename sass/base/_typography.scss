@@ -1,0 +1,34 @@
+
+
+body {
+  font-family: 'Itim', cursive;
+  line-height: 1.7;
+  font-weight: 400;
+  color: $color-grey-dark;
+  margin: 3rem;
+}
+
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+
+  &--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation: moveInLeft 1s ease-out 2s;
+    animation-fill-mode: backwards;
+  };
+
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 70rem;
+    letter-spacing: 1.75rem;
+    animation: moveInRight 1s ease-out 2s;
+    animation-fill-mode: backwards;
+  };
+}

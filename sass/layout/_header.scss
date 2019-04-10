@@ -1,0 +1,35 @@
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+    to right bottom,
+     rgba(90, 154, 176, 0.6), 
+     rgba(37, 85, 105, 0.8)), 
+     url("../assets/img/header.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  position: relative;
+  animation: fadeIn 2s ease-in;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  
+  };
+
+  &__logo {
+    height: 10rem;
+  };
+
+  &__text-box {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

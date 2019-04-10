@@ -1,1 +1,24 @@
-$bg-col: #D0C865
+
+*,
+*::after,
+*::before {
+  padding:0;
+  margin:0;
+  box-sizing: inherit;
+}
+
+html {
+  //defines what 1rem is
+  font-size: 62.5%
+}
+
+@media only screen and (max-width: 40rem) {
+  html {
+    font-size: 50%;
+  }
+}
+
+
+body {
+  box-sizing: border-box;
+}
