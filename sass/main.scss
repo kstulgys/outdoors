@@ -32,6 +32,7 @@ body {
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   position: relative;
+  animation: fadeIn 2s ease-in 
 }
 
 .logo-box {
@@ -56,7 +57,9 @@ body {
   font-size: 60px;
   font-weight: 400;
   letter-spacing: 35px;
-  animation: moveInLeft 1.5s ease-out 
+  animation: moveInLeft 1s ease-out 2s;
+  animation-fill-mode: backwards;
+
 }
 
 .heading-primary-sub {
@@ -64,7 +67,9 @@ body {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 18px;
-  animation: moveInRight 1.5s ease-out 
+  animation: moveInRight 1s ease-out 2s;
+  animation-fill-mode: backwards;
+
 
 }
 
@@ -84,6 +89,8 @@ body {
   text-transform: uppercase;
   transition: all .2s;
   border-radius: 100px;
+  position: relative;
+
 
 }
 
@@ -98,15 +105,35 @@ body {
 
 }
 
+.btn::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 100px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transition: all .4s;
+}
+
+.btn:hover::after {
+  transform: scale(1.4,1.6);
+  opacity: 0
+}
+
 .btn-white {
   background-color: #fff;
   color: #777;
 }
 
-.btn-animated {
-  animation: moveInBottom 1.5s ease-out 0.5s;
-  animation-fill-mode: backwards;
+.btn-white::after {
+  background-color: #fff;
+}
 
+.btn-animated {
+  animation: moveInBottom 1s ease-out 3s;
+  animation-fill-mode: backwards;
 }
 
 @keyframes moveInLeft {
@@ -153,5 +180,16 @@ body {
   100% {
     opacity: 1;
     transform: translateY(0)
+  }
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
