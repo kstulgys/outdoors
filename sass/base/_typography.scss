@@ -1,7 +1,5 @@
-
-
 body {
-  font-family: 'Itim', cursive;
+  font-family: 'Lora', serif;
   line-height: 1.7;
   font-weight: 400;
   color: $color-grey-dark;
@@ -21,7 +19,7 @@ body {
     letter-spacing: 3.5rem;
     animation: moveInLeft 1s ease-out 2s;
     animation-fill-mode: backwards;
-  };
+  }
 
   &--sub {
     display: block;
@@ -30,5 +28,38 @@ body {
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out 2s;
     animation-fill-mode: backwards;
-  };
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+  letter-spacing: 0.2rem;
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 0.25rem rgba($color-black, 0.2);
+  }
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
 }

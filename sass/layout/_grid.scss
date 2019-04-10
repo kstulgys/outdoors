@@ -1,38 +1,32 @@
 .row {
-  max-width: 114rem;
+  max-width: $grid-width;
   display: flex;
   justify-content: space-between;
-  background-color: #eee;
+  margin: 0 auto;
 
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-bottom: 3rem;
   }
   .col-1-of-2 {
     width: calc(100% * 0.5 - 5rem * 0.5);
-    background-color: red;
   }
 
   .col-1-of-3 {
     width: calc(100% * 0.333 - 5rem * 0.666);
-    background-color: red;
   }
-  
+
   .col-1-of-4 {
     width: calc(100% * 0.25 - 5rem * 0.75);
-    background-color: red;
   }
 
   .col-2-of-3 {
     width: calc(100% * 0.666 - 5rem * 0.333);
-    background-color: red;
   }
   .col-3-of-4 {
     width: calc(100% * 0.75 - 5rem * 0.25);
-    background-color: red;
   }
-
 }
 
-
-
-
+// $grid-width: 114rem;
+// $gutter-vertical: 8rem;
+// $gutter-horizontal: 2rem;
